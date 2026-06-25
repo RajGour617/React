@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.parent {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  height: 350px;
+  width: min(100%, 300px);
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+  border-radius: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 16px;
+}
+
+.top img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.top button {
+  border: none;
+  background-color: #eee;
+  color: gray;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.center h3 {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.center span {
+  color: gray;
+  font-size: 14px;
+}
+
+.center h2 {
+  margin: 14px 0 10px;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.center .tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.center h4 {
+  background-color: rgb(217, 241, 249);
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 90px 20px 25px;
+  gap: 16px;
+}
+
+.bottom .pay {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom .pay h3 {
+  color: black;
+  margin: 0 0 6px;
+}
+
+.bottom .pay p {
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+}
+
+.bottom button {
+  border: none;
+  background-color: #111;
+  color: #eee;
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .parent {
+    padding: 20px;
+  }
+
+  .card {
+    width: min(100%, 360px);
+  }
+
+  .bottom {
+    padding: 24px 20px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .parent {
+    padding: 16px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 24px;
+  }
+
+  .top,
+  .bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .top {
+    padding: 18px 16px;
+  }
+
+  .bottom {
+    padding: 18px 16px 20px;
+  }
+
+  .center {
+    padding: 0 16px 18px;
+  }
+
+  .center h2 {
+    font-size: 1.25rem;
+  }
+
+  .bottom button {
+    width: 100%;
+    margin: 0;
+  }
+}

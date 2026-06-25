@@ -1,0 +1,29 @@
+input {
+    margin: 10px;
+    padding: 20px 20px;
+}
+
+.box {
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+}
+
+.page1 {
+    height: 400px;
+    width: 100vh;
+    background-color: lightseagreen;
+}
+
+.page2 {
+    height: 400px;
+    width: 100vh;
+    background-color: teal;
+}
+
+.page3 {
+    height: 400px;
+    width: 100vh;
+    background-color: skyblue;
+}
